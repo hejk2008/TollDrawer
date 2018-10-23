@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "theAwesomeTollDrawer", "theAwesomeTollDrawer\theAwesomeTollDrawer.pyproj", "{55FE0A23-09C9-47AA-BB0E-6AAB110052C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55FE0A23-09C9-47AA-BB0E-6AAB110052C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55FE0A23-09C9-47AA-BB0E-6AAB110052C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5595BB27-F7C0-411F-9E0C-3F1DDC1D9603}
+	EndGlobalSection
+EndGlobal
