@@ -16,6 +16,11 @@
     <height>594</height>
    </size>
   </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+   </font>
+  </property>
   <property name="windowTitle">
    <string notr="true">大班会抽奖器 by Jack He (https://hejk2008.github.io/theAwesomeTollDrawer)</string>
   </property>
@@ -45,6 +50,7 @@
       </property>
       <property name="font">
        <font>
+        <family>微软雅黑</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -56,7 +62,7 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="0" rowspan="3" colspan="2">
+    <item row="0" column="0" rowspan="3" colspan="2" alignment="Qt::AlignVCenter">
      <widget class="QLabel" name="student">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -80,8 +86,6 @@
        <font>
         <family>微软雅黑</family>
         <pointsize>48</pointsize>
-        <weight>50</weight>
-        <bold>false</bold>
        </font>
       </property>
       <property name="text">
@@ -108,6 +112,7 @@
       </property>
       <property name="font">
        <font>
+        <family>微软雅黑</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -129,6 +134,7 @@
       </property>
       <property name="font">
        <font>
+        <family>微软雅黑</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -147,6 +153,7 @@
       </property>
       <property name="font">
        <font>
+        <family>微软雅黑</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -165,6 +172,7 @@
       </property>
       <property name="font">
        <font>
+        <family>微软雅黑</family>
         <pointsize>12</pointsize>
        </font>
       </property>

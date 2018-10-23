@@ -32,7 +32,7 @@ class mywindow(QtWidgets.QWidget,Ui_Form):
         try:
             self.student.setText(str(random.choice(stdList)))
         except(IndexError):
-            self.statusLabel.setText('已停止')
+            self.statusLabel.setText('<font color=black>已停止</font>')
 
     def drawStart(self):
         global stdList, fp
@@ -48,12 +48,12 @@ class mywindow(QtWidgets.QWidget,Ui_Form):
                 loadList(3)
                 stdList += fp
             #print(stdList)
-            self.statusLabel.setText('运行中')
+            self.statusLabel.setText('<font color=green>运行中</font>')
             self.timer.start(10)
 
     def drawStop(self):
         self.timer.stop()
-        self.statusLabel.setText('已停止')
+        self.statusLabel.setText('<font color=black>已停止</font>')
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
