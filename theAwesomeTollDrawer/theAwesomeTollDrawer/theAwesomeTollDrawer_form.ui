@@ -50,7 +50,6 @@
       </property>
       <property name="font">
        <font>
-        <family>微软雅黑</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -84,7 +83,6 @@
       </property>
       <property name="font">
        <font>
-        <family>微软雅黑</family>
         <pointsize>48</pointsize>
        </font>
       </property>
@@ -112,7 +110,6 @@
       </property>
       <property name="font">
        <font>
-        <family>微软雅黑</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -134,7 +131,6 @@
       </property>
       <property name="font">
        <font>
-        <family>微软雅黑</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -153,7 +149,6 @@
       </property>
       <property name="font">
        <font>
-        <family>微软雅黑</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -172,7 +167,6 @@
       </property>
       <property name="font">
        <font>
-        <family>微软雅黑</family>
         <pointsize>12</pointsize>
        </font>
       </property>
@@ -191,6 +185,11 @@
      <width>54</width>
      <height>12</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+    </font>
    </property>
    <property name="text">
     <string notr="true">就绪</string>
