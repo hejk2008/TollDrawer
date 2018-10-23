@@ -17,7 +17,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string notr="true">大班会抽奖器 by Jack He</string>
+   <string notr="true">大班会抽奖器 by Jack He (https://hejk2008.github.io/theAwesomeTollDrawer)</string>
   </property>
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">

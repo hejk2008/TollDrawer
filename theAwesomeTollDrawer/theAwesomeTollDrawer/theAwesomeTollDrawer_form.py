@@ -13,7 +13,7 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(631, 591)
         Form.setMaximumSize(QtCore.QSize(633, 594))
-        Form.setWindowTitle("大班会抽奖器 by Jack He")
+        Form.setWindowTitle("大班会抽奖器 by Jack He (https://hejk2008.github.io/theAwesomeTollDrawer)")
         self.gridLayoutWidget = QtWidgets.QWidget(Form)
         self.gridLayoutWidget.setGeometry(QtCore.QRect(40, 30, 581, 551))
         self.gridLayoutWidget.setObjectName("gridLayoutWidget")
