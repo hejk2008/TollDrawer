@@ -114,9 +114,12 @@ class Ui_Form(object):
         self.retranslateUi(Form)
         self.startButton.clicked.connect(Form.drawStart)
         self.stopbutton.clicked.connect(Form.drawStop)
+        self.dial.valueChanged['int'].connect(Form.changeSpeed)
         QtCore.QMetaObject.connectSlotsByName(Form)
+        Form.setTabOrder(self.klass1, self.klass2)
         Form.setTabOrder(self.klass2, self.klass3)
-        Form.setTabOrder(self.klass3, self.startButton)
+        Form.setTabOrder(self.klass3, self.dial)
+        Form.setTabOrder(self.dial, self.startButton)
         Form.setTabOrder(self.startButton, self.stopbutton)
 
     def retranslateUi(self, Form):

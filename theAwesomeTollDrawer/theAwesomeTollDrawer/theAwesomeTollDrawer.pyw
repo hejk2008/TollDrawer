@@ -33,7 +33,6 @@ class mywindow(QtWidgets.QWidget,Ui_Form):
             self.student.setText(str(random.choice(stdList)))
         except(BaseException):
             self.statusLabel.setText('<font color=red>错误</font>')
-        self.timer.setInterval(1000/self.dial.value())
 
     def drawStart(self):
         global stdList, fp
@@ -57,6 +56,9 @@ class mywindow(QtWidgets.QWidget,Ui_Form):
     def drawStop(self):
         self.timer.stop()
         self.statusLabel.setText('<font color=black>已停止</font>')
+
+    def changeSpeed(self):
+        self.timer.setInterval(1000/self.dial.value())
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
