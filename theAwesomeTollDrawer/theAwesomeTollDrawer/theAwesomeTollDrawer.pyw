@@ -31,12 +31,15 @@ class mywindow(QtWidgets.QWidget,Ui_Form):
         global stdList
         try:
             self.student.setText(str(random.choice(stdList)))
-        except(IndexError):
-            self.statusLabel.setText('<font color=black>已停止</font>')
+        except(BaseException):
+            self.statusLabel.setText('<font color=red>错误</font>')
+        self.timer.setInterval(1000/self.dial.value())
 
     def drawStart(self):
         global stdList, fp
         stdList = []
+        self.timer.stop()
+        self.statusLabel.setText('<font color=black>已停止</font>')
         if self.klass1.isChecked() or self.klass2.isChecked() or self.klass3.isChecked():
             if self.klass1.isChecked():
                 loadList(1)
@@ -47,9 +50,9 @@ class mywindow(QtWidgets.QWidget,Ui_Form):
             if self.klass3.isChecked():
                 loadList(3)
                 stdList += fp
-            #print(stdList)
+            print(stdList)
             self.statusLabel.setText('<font color=green>运行中</font>')
-            self.timer.start(10)
+            self.timer.start(1000/self.dial.value())
 
     def drawStop(self):
         self.timer.stop()

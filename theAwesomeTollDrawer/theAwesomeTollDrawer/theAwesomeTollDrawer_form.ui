@@ -16,13 +16,8 @@
     <height>594</height>
    </size>
   </property>
-  <property name="font">
-   <font>
-    <family>微软雅黑</family>
-   </font>
-  </property>
   <property name="windowTitle">
-   <string notr="true">大班会抽奖器 by Jack He (https://hejk2008.github.io/theAwesomeTollDrawer)</string>
+   <string notr="true">大班会抽奖器 by hejk2008 (https://hejk2008.github.io/theAwesomeTollDrawer)</string>
   </property>
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
@@ -34,6 +29,64 @@
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" rowspan="3" colspan="2">
+     <widget class="QLabel" name="student">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>284</width>
+        <height>265</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <pointsize>48</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string notr="true">测 试</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QCheckBox" name="klass3">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string notr="true">3班</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QCheckBox" name="klass1">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string notr="true">1班</string>
+      </property>
+     </widget>
+    </item>
     <item row="3" column="1">
      <widget class="QPushButton" name="stopbutton">
       <property name="sizePolicy">
@@ -58,39 +111,6 @@
       </property>
       <property name="text">
        <string notr="true">停止</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0" rowspan="3" colspan="2" alignment="Qt::AlignVCenter">
-     <widget class="QLabel" name="student">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>284</width>
-        <height>265</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>284</width>
-        <height>265</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>48</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string notr="true">测 试</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </item>
@@ -121,32 +141,8 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="2">
-     <widget class="QCheckBox" name="klass3">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string notr="true">3班</string>
-      </property>
-     </widget>
-    </item>
     <item row="1" column="2">
      <widget class="QCheckBox" name="klass2">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
       <property name="font">
        <font>
         <pointsize>12</pointsize>
@@ -157,23 +153,32 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="2">
-     <widget class="QCheckBox" name="klass1">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string notr="true">1班</string>
-      </property>
-     </widget>
+    <item row="3" column="2">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QDial" name="dial">
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
+        <property name="sliderPosition">
+         <number>100</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>速度</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>
@@ -200,7 +205,6 @@
   </widget>
  </widget>
  <tabstops>
-  <tabstop>klass1</tabstop>
   <tabstop>klass2</tabstop>
   <tabstop>klass3</tabstop>
   <tabstop>startButton</tabstop>
@@ -231,8 +235,8 @@
    <slot>drawStop()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>356</x>
-     <y>507</y>
+     <x>376</x>
+     <y>506</y>
     </hint>
     <hint type="destinationlabel">
      <x>216</x>
