@@ -12,6 +12,7 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(631, 591)
+        Form.setMinimumSize(QtCore.QSize(631, 591))
         Form.setMaximumSize(QtCore.QSize(633, 594))
         Form.setWindowTitle("大班会抽奖器 by hejk2008 (https://hejk2008.github.io/theAwesomeTollDrawer)")
         self.gridLayoutWidget = QtWidgets.QWidget(Form)

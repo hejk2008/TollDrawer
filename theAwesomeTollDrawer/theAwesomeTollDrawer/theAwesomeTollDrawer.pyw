@@ -31,7 +31,7 @@ class mywindow(QtWidgets.QWidget,Ui_Form):
         global stdList
         try:
             self.student.setText(str(random.choice(stdList)))
-        except(BaseException):
+        except:
             self.statusLabel.setText('<font color=red>错误</font>')
 
     def drawStart(self):
@@ -39,19 +39,22 @@ class mywindow(QtWidgets.QWidget,Ui_Form):
         stdList = []
         self.timer.stop()
         self.statusLabel.setText('<font color=black>已停止</font>')
-        if self.klass1.isChecked() or self.klass2.isChecked() or self.klass3.isChecked():
-            if self.klass1.isChecked():
-                loadList(1)
-                stdList += fp
-            if self.klass2.isChecked():
-                loadList(2)
-                stdList += fp
-            if self.klass3.isChecked():
-                loadList(3)
-                stdList += fp
-            print(stdList)
-            self.statusLabel.setText('<font color=green>运行中</font>')
-            self.timer.start(1000/self.dial.value())
+        try:
+            if self.klass1.isChecked() or self.klass2.isChecked() or self.klass3.isChecked():
+                if self.klass1.isChecked():
+                    loadList(1)
+                    stdList += fp
+                if self.klass2.isChecked():
+                    loadList(2)
+                    stdList += fp
+                if self.klass3.isChecked():
+                    loadList(3)
+                    stdList += fp
+                print(stdList)
+                self.statusLabel.setText('<font color=green>运行中</font>')
+                self.timer.start(1000/self.dial.value())
+        except:
+            self.statusLabel.setText('<font color=red>错误</font>')
 
     def drawStop(self):
         self.timer.stop()
@@ -59,6 +62,7 @@ class mywindow(QtWidgets.QWidget,Ui_Form):
 
     def changeSpeed(self):
         self.timer.setInterval(1000/self.dial.value())
+        print(self.dial.value())
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
